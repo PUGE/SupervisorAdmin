@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.SupervisorAdmin" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>SupervisorAdmin</name>
+    <description>
+        Supervisor远程管理.
+    </description>
+    <author email="mail@puge.org" href="https://github.com/PUGE">PUGE</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="*" />
+    <allow-intent href="market:*" />
+    <splash density="land-hdpi" src="./app/res/drawable-land-hdpi/screen.png" />
+    <splash density="land-ldpi" src="./app/res/drawable-land-ldpi/screen.png" />
+    <splash density="land-mdpi" src="./app/res/drawable-land-mdpi/screen.png" />
+    <splash density="land-xhdpi" src="./app/res/drawable-land-xhdpi/screen.png" />
+    <splash density="land-xxhdpi" src="./app/res/drawable-land-xxhdpi/screen.png" />
+    <splash density="port-hdpi" src="./app/res/drawable-port-hdpi/screen.png" />
+    <splash density="port-ldpi" src="./app/res/drawable-port-ldpi/screen.png" />
+    <splash density="port-mdpi" src="./app/res/drawable-port-mdpi/screen.png" />
+    <splash density="port-xhdpi" src="./app/res/drawable-port-xhdpi/screen.png" />
+    <splash density="port-xxhdpi" src="./app/res/drawable-port-xxhdpi/screen.png" />
+    <icon density="ldpi" src="./app/res/ldpi.png" />
+    <icon density="mdpi" src="./app/res/mdpi.png" />
+    <icon density="hdpi" src="./app/res/hdpi.png" />
+    <icon density="xhdpi" src="./app/res/xhdpi.png" />
+    <icon density="xxhdpi" src="./app/res/xxhdpi.png" />
+    <icon density="xxxhdpi" src="./app/res/xxxhdpi.png" />
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <application android:usesCleartextTraffic="true" />
+    </edit-config>
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="StatusBarBackgroundColor" value="#ffffff" />
+    <preference name="BackgroundColor" value="#ffffff" />
+</widget>
